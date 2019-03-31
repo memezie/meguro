@@ -1,97 +1,51 @@
 <!doctype html>
-<html lang="ja">
+<html lnag="ja">
 <head>
 <meta charset="UTF-8">
-<title>Dotinstall Paneをつかってみよう</title>
-	<link rel="icon" href="favicon.ico">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/styles.css">
+	<style>
+		body{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			background: skyblue;
+			cursor: pointer;
+			transition: 0.8s;
+			margin: 0 8px 8px 0;
+		}
+		.circle{
+			background: pink;
+			border-radius: 50%;
+			transform: rotate(360deg);
+		}
+	</style>
+<title>Java Script Practice</title>
 </head>
 
-
 <body>
+	<div id="target1" class="box"></div>
+	<div id="target2" class="box"></div>
+	<div id="target3" class="box"></div>
 	
-	<header class="orange-bg">
-		<div class="container">
-			<h1>Dotinstall Pane</h1>
-			<p>
-			ドットインストールを見ながら<br>
-			コーディングができるAtomパッケージ
-			</p>
-			<a href="#" target="_blank" class="btn">詳細を見る <i class="fas fa-external-link-alt"></i></a>
-			<img src="images/top.png" alt="dotinstall Paneの画像" width="480" height="270">
-		</div>
-	</header>
+	<script>
+		'use strict';
+		
+		const target1 = document.getElementById('target1');
+		const target2 = document.getElementById('target2');
+		const target3 = document.getElementById('target3');
+		
+			target1.addEventListener('click',function(){
+			target1.classList.toggle('circle');
+		});	
+			target2.addEventListener('click',function(){
+			target2.classList.toggle('circle');
+		});
+			target3.addEventListener('click',function(){
+			target3.classList.toggle('circle');
 
-	<section class="features">
-		<div class="container">
-		<h1  data-subtitle="- Features -" class="section-title">Dotinstall Paneの特長</h1>
-			<section class="feature">
-				<img src="images/feature1.png" alt="特徴" width="420" height="270">
-				<div class="desc">
-					<h1>すごい特徴があるよ！</h1>
-					<p>いろいろあります。いろいろあります。いろいろあります。いろいろあります。
-					いろいろあります。いろいろあります。いろいろあります。いろいろあります。
-					いろいろあります。いろいろあります。いろいろあります。いろいろあります。</p>
-				</div>
-			</section>
-			<section class="feature">
-				<img src="images/feature2.png" alt="特徴2" width="420" height="270">
-				<div class="desc">
-					<h1>すごい特徴があるよ！</h1>
-					<p>いろいろあります。いろいろあります。いろいろあります。いろいろあります。
-					いろいろあります。いろいろあります。いろいろあります。いろいろあります。
-					いろいろあります。いろいろあります。いろいろあります。いろいろあります。</p>
-				</div>
-			</section>
-			<section class="feature">
-				<img src="images/feature3.png" alt="特徴3" width="420" height="270">
-				<div class="desc">
-					<h1>すごい特徴があるよ！</h1>
-					<p>いろいろあります。いろいろあります。いろいろあります。いろいろあります。
-					いろいろあります。いろいろあります。いろいろあります。いろいろあります。
-					いろいろあります。いろいろあります。いろいろあります。いろいろあります。</p>
-				</div>
-			</section>
-
-		</div>
-	</section>
-	
-	<section class="voices">
-		<div class="container">
-			<h1  data-subtitle="- Voices -" class="section-title">利用者の声</h1>
-			<div class="flex">
-			<section class="voice">
-				<img src="images/user1.png" width="90" height="90" alt="利用者A">
-				<p>良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
-				良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
-				良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。</p>
-			</section>
-			<section class="voice">
-				<img src="images/user2.png" width="90" height="90" alt="利用者B">
-				<p>良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
-				良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
-				良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。</p>
-			</section>
-			<section class="voice">
-				<img src="images/user3.png" width="90" height="90" alt="利用者C">
-				<p>良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
-				良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。
-				良い感じです。良い感じです。良い感じです。良い感じです。良い感じです。</p>
-			</div>
-			</section>
-		</div>
-	</section>
-	
-	<section class="call-to-action orange-bg">
-		<div class="container">
-			<h1 class="section-title">Dotinstall Paneを使ってみよう</h1>
-			<a href="#" target="_blank" class="btn">詳細を見る <i class="fas fa-external-link-alt"></i></a>
-		</div>
-	</section>
-	
-	<footer>
-		<p>&copy; dotinstall.com</p>
-	</footer>
+		});
+	</script>
 </body>
 </html>
