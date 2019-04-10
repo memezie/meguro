@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jQueryの練習</title>
+<style>
+  .mystyle{
+    border: 5px solid green;
+    font-size: 48px;
+  }
+  </style>
+</head>
+
+<body>
+  
+      <p>jQueryの練習</p>
+<!-- 
+
+      <button>ADD!</button>
+      
+      <input type="text" id="name">
+      <select name="members" id="members">
+        <option>taguchi</option>
+        <option>fkoji</option>
+        <option>dotinstall</option>
+      </select>
+
+      <div id="box" style="width: 100px;height:100px;background: red;"></div>
+
+      <ul>
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+      </ul>
+
+     
+      <a href="http://google.com" data-sitename="google">Google</a>
+      <input type="text" value="hello">
+
+   <p><a href="http://google.com">Google</a></p>
+  <p><a href="http://yahoo.co.jp">Yahoo</a></p>
+  <p><a href="http://dotinstall.com">Dotinstall</a></p>
+
+    <p>jQueryの練習</p>
+     <ul id="main">
+    <li>0</li>
+    <li class="item">1</li>
+    <li class="item">2</li>
+    <li>3
+          <ul id="sub">
+            <li>3-0</li>
+            <li>3-1</li>
+            <li class="item">3-2</li>
+            <li class="item">3-3</li>
+            <li>3-4</li>
+          </ul>
+          </li>
+  </ul> 
+  -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script>
+  
+      $(function() {
+        
+        
+        
+//        $('button').click(function(){
+//          var p = $('<p>').text('vanish').addClass('vanish');
+//          $(this).before(p);
+//        });
+        
+//        $('body').on('click', '.vanish', function(){
+//          $(this).remove();
+//       });
+        
+//        $('#name')
+//          .focus(function(){
+//          $(this).css('background', 'red');
+//        })
+//          .blur(function(){
+//          $(this).css('background', '#fff');
+//        });
+//        $('#members').change(function(){
+//          alert('changed!');
+//        });
+        
+//        $('#box').click(function(){
+//          alert("hi!");
+//        });
+        
+//        $('#box').mouseover(function(){
+//         $(this).css('background', 'green');
+//        })
+//        $('#box').mouseout(function(){
+//          $(this).css('background', 'red');
+//        });
+//        $('#box').mousemove(function(e){
+//          $(this).text(e.pageX);
+//        });
+        
+//        $('#box').hide(800);
+//       $('#box').fadeOut(800);
+//      $('#box').toggle(800);
+//       $('#box').fadeOut(800, function(){
+//         alert("gone!!");
+//       });
+
+//        var li = $('<li>').text('just added');
+//        $('ul > li:eq(1)').before(li);
+//        li.insertBefore($('ul > li:eq(1)'));
+//        $('ul').prepend(li);
+//        $('ul').append(li);
+//        li.appendTo($('ul'));
+        
+//        $('p').text('just change');
+//        $('p').html('<a href="">click me!</a>');
+//        $('input').val('hello, again');
+//          $('p').empty();
+  
+//        console.log($('a').attr('href'));
+//        $('a').attr('href', 'http://google.co.jp');
+//        console.log($('a').data('sitename'));
+//        $('p').addClass('mystyle');
+        
+//        $('p').css('background', 'blue').css('color', 'red');
+//        console.log($('p').css('color'));
+
+//        $('a[href="http://google.com"]').css('background', 'red');
+//        $('a[href!="http://google.com"]').css('background', 'red');
+//        $('a[href*="dotinstall"]').css('background', 'red');
+//        $('a[href*="jp"]').css('background', 'red');
+
+//        $('p').css('color', 'red').hide('slow');
+//        $("#sub").css('color', 'red');
+//        $(".item").css('color', 'red');
+//        $("#sub > li:eq(2)").css('color', 'red');
+//        $("#sub > li:gt(1)").css('color', 'red');
+//        $("#sub > li:odd").css('color', 'red');
+//        $("#sub > li:even").css('color', 'red');
+//        $("#sub > li:contains('4')").css('color', 'red');
+//        $("#sub").parent().css('color', 'red');
+//        $("#sub > li:eq(2)").next().parent().css('color', 'red');
+//        $("#sub > li:eq(2)").siblings().parent().css('color', 'red');
+        
+      });
+  
+  </script>
+</body>
+</html>
