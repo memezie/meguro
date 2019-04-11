@@ -14,6 +14,22 @@
 <body>
   
       <p>jQueryの練習</p>
+	
+	<button>もっと読む</button>
+	
+	<p>
+	
+	<input type="text" name="name" id="name">
+	<input type="button" id="greet" value="Greet!">
+	
+	</p>
+	
+	
+	<div id="result"></div>
+	
+	
+	
+	
 <!-- 
 
       <button>ADD!</button>
@@ -62,7 +78,22 @@
   
       $(function() {
         
-        
+        $('button').click(function(){
+			$('#result').load('more.html'
+			);
+		});
+
+        $('#greet').click(function(){
+			$.get('greet.php', {
+				name: $('#name').val()
+			}, function(data){
+				$('#result').html(data.message + '(' + data.length + ')');
+			});
+			
+		});
+			
+			
+		});
         
 //        $('button').click(function(){
 //          var p = $('<p>').text('vanish').addClass('vanish');
